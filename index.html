@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://images.unsplash.com/photo-1553610074-8c838fa2e56e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 class="title">Treasure Hunt Game</h1>
+<div class="ship">
+<img src="https://images.unsplash.com/photo-1508094902356-db488e227d75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="a pirate ship" height="200px" width="350px"/>
+</div>
+<h2>Game Rules</h2>
+<div class="ruleList">
+  <ul class="list">
+    <li>Click the boxes to reveal what's on the map.</li>
+    <li>If you click on the bomb, you lose.</li>
+    <li>If you click on the treasure, you win.</li>
+</ul>
+</div>
+<div class="table">
+<table border="6">
+    <tr>
+        <td onclick = "treasure(0)" id = 0>?</td>
+        <td onclick = "treasure(1)" id = 1>?</td>
+        <td onclick = "treasure(2)" id = 2>?</td>
+    </tr>
+    <tr>
+        <td onclick = "treasure(3)" id = 3>?</td>
+        <td onclick = "treasure(4)" id = 4>?</td>
+        <td onclick = "treasure(5)" id = 5>?</td>
+    </tr>
+    <tr>
+        <td onclick = "treasure(6)" id = 6>?</td>
+        <td onclick = "treasure(7)" id = 7>?</td>
+        <td onclick = "treasure(8)" id = 8>?</td>
+    </tr>
+</table>
+</div>
+<div class="restart">
+<button type="button" onclick="location.reload()">Restart Game</button>
+</div>
+<script type = "text/javascript" src="Treasurehunt.js"></script>
+</body>
+</html>
